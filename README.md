@@ -1,14 +1,19 @@
 
 Introduction
-------------
+============
 
 rb_delimcc adds support for delimited continuations build upon callcc.
 
 Installation
-------------
+============
 
-rb_delimcc comes with a gem specification, but is not available from
-rubygems.org yet. So to install you have to:
+## Install Gem
+
+rb_delimcc is available via rubygems.org and be installed using rubygems:
+
+    $ gem install rb_delimcc
+
+## Install From Source
 
 1. get the source 
     - from github: 
@@ -24,7 +29,7 @@ rubygems.org yet. So to install you have to:
     $ sudo gem install rb_delimcc
 
 Usage:
-------
+======
 
 To use rb_prob you need to use rubygems and require the library:
 
@@ -36,13 +41,13 @@ To use rb_prob you need to use rubygems and require the library:
 The only functions you will need are 'reset' and 'shift'.
 
 Examples
---------
+========
 
 some simple examples can be found in examples/testcc.rb . 
 Just run the file with 'ruby testcc.rb', to find out how delimcc works.
 
 Limitations
------------
+===========
 
 delimcc is build upon callcc, so if your ruby implementation of choice has no
 proper call/cc support build in, delimited continuations won't work then.
