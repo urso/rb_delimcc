@@ -1,4 +1,11 @@
 
+begin
+    Kernel.method :callcc
+rescue
+    require 'continuation'
+    Kernel.method :callcc
+end
+
 module DelimCC
     def metacc_get
         tmp = Thread.current["__meta_cc__"]
